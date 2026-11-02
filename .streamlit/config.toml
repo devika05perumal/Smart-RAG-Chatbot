@@ -1,0 +1,14 @@
+[theme]
+base = "light"
+primaryColor = "#0F766E"
+backgroundColor = "#F4F5F2"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#12202B"
+font = "sans serif"
+
+[server]
+# Per-file upload limit in MB (keep in sync with MAX_FILE_SIZE_MB in config.py / .env)
+maxUploadSize = 20
+
+[browser]
+gatherUsageStats = false

@@ -1,0 +1,16 @@
+Retrieval-Augmented Generation (RAG) - A Short Primer
+
+Retrieval-Augmented Generation, or RAG, combines a search step with a language model. Instead of relying only on what a model learned during training, a RAG system first retrieves relevant passages from a knowledge base and then asks the model to answer using those passages.
+
+How it works
+1. Documents are split into small chunks of text.
+2. Each chunk is converted into an embedding, a list of numbers that captures its meaning.
+3. The embeddings are stored in a vector database such as FAISS.
+4. When a question arrives, it is embedded too, and the database returns the most similar chunks.
+5. The chunks and the question are placed into a prompt, and the language model writes the answer.
+
+Why use RAG
+RAG reduces hallucinations because answers are grounded in real documents. It also allows knowledge to be updated by simply adding or removing documents, without retraining the model. Sources can be shown to the user so every answer can be verified.
+
+Common settings
+Chunk size controls how much text each chunk holds; typical values are 500 to 1500 characters. Chunk overlap repeats a little text between neighbouring chunks so ideas are not cut in half. Top-K is the number of chunks retrieved for each question; most systems use between 3 and 6.

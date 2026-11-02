@@ -1,0 +1,25 @@
+order_id,region,product,units,unit_price_eur,month
+1001,North,Nimbus Notes Plus,120,5,January
+1002,South,Nimbus Notes Team,45,12,January
+1003,East,Nimbus Notes Plus,98,5,January
+1004,West,Nimbus Notes Free,300,0,January
+1005,North,Nimbus Notes Team,60,12,February
+1006,South,Nimbus Notes Plus,150,5,February
+1007,East,Nimbus Notes Team,80,12,February
+1008,West,Nimbus Notes Plus,110,5,February
+1009,North,Nimbus Notes Plus,130,5,March
+1010,South,Nimbus Notes Team,70,12,March
+1011,East,Nimbus Notes Plus,105,5,March
+1012,West,Nimbus Notes Team,95,12,March
+1013,North,Nimbus Notes Team,85,12,April
+1014,South,Nimbus Notes Plus,160,5,April
+1015,East,Nimbus Notes Free,410,0,April
+1016,West,Nimbus Notes Plus,125,5,April
+1017,North,Nimbus Notes Plus,140,5,May
+1018,South,Nimbus Notes Team,90,12,May
+1019,East,Nimbus Notes Team,100,12,May
+1020,West,Nimbus Notes Plus,135,5,May
+1021,North,Nimbus Notes Team,110,12,June
+1022,South,Nimbus Notes Plus,170,5,June
+1023,East,Nimbus Notes Plus,145,5,June
+1024,West,Nimbus Notes Team,120,12,June

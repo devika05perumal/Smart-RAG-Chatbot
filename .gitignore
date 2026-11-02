@@ -1,0 +1,21 @@
+# Secrets
+.env
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local app data (keep the folders, ignore the contents)
+data/uploads/*
+data/vector_db/*
+!data/uploads/.gitkeep
+!data/vector_db/.gitkeep
+data/chat_history.db
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

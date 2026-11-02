@@ -1,0 +1,105 @@
+
+/* =========================================
+   FIX: STREAMLIT ICONS
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
+
+[data-testid="stIconMaterial"],
+.material-symbols-rounded,
+.material-symbols-outlined,
+.material-icons,
+.material-icons-outlined {
+    font-family: 'Material Symbols Rounded' !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    font-feature-settings: 'liga';
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+/* =========================================
+   FIX: SIDEBAR OVERLAPPING
+   ========================================= */
+
+section[data-testid="stSidebar"] {
+    min-width: 260px;
+}
+
+section[data-testid="stSidebar"] .stButton,
+section[data-testid="stSidebar"] .stDownloadButton {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+section[data-testid="stSidebar"] button {
+    white-space: normal !important;
+    min-height: 38px;
+    height: auto;
+    line-height: 1.4;
+}
+
+/* =========================================
+   FIX: CHAT MESSAGE SPACING
+   ========================================= */
+
+[data-testid="stChatMessage"] {
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+[data-testid="stChatMessage"] p {
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+[data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] {
+    width: 100%;
+    min-width: 0;
+}
+
+/* =========================================
+   FIX: EXPANDER ICON ALIGNMENT
+   ========================================= */
+
+[data-testid="stExpander"] summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+[data-testid="stExpander"] summary span {
+    line-height: 1.5;
+}
+
+/* =========================================
+   FIX: RESPONSIVE LAYOUT
+   ========================================= */
+
+.block-container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+@media (max-width: 760px) {
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    section[data-testid="stSidebar"] {
+        min-width: 0;
+    }
+
+    [data-testid="stChatMessage"] {
+        padding: 12px;
+        margin-left: 0 !important;
+    }
+}
